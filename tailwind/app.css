@@ -48753,3 +48753,23 @@ body{
   
 }
 
+.modal-width {
+  width:566px ;
+}
+
+.modal-height {
+  height: 439px;
+}
+
+.modal-color {
+  color:#C1B55E;
+}
+
+.modal-bg {
+  background-color:#C1B55E;
+}
+
+.modal-text {
+  font-family:'Quicksand';
+}
+
