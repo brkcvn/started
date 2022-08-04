@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akaunting</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="w-full h-auto border-b-2 border-gray-200 text-gray-500 font-semibold">
+        <div class="flex justify-between items-center mx-6">
+            <div class="h-full w-52 p-4">
+                <img src="img/akaunting-logo-horizontal.svg" alt="akaunting">
+            </div>
+            <div>
+                <ul class="hidden space-x-10 p-6 sm:hidden lg:flex flex-row xl:flex flex-rows ">
+                    <li class="hover:text-gray-600"><a href="">Apps</a></li>
+                    <li class="hover:text-gray-600"><a href="">Features</a></li>
+                    <li class="hover:text-gray-600"><a href="">Support</a></li>
+                    <li class="hover:text-gray-600"><a href="">Blog</a></li>
+                    <li class="hover:text-gray-600"><a href="">Plans</a></li>
+                </ul>
+            </div>
+
+            <div class="grid grid-cols-2 gap-8 h-1/2 justify-between">
+                <a href="" class="bg-green-400 p-4 text-white rounded-xl hidden  lg:flex justify-center items-center hover:bg-green-500">Get Started</a>
+                <a href= "" class="bg-gray-600 text-white w-14 h-14 rounded-full hidden text-lg lg:flex items-center justify-center">M</a> 
+            </div>
+        </div>  
+    </header>
+
+    <section>
+        <div>
+            <h1 class=" text-7xl mx-20 text-neutral-900 font-black py-9">Let's Get in Touch</h1>
+        </div>
+        <div class=" w-full grid lg:grid-cols-2 p-10">
+            <div class="bg-gray-100 w-5/6 p-36 text-right hidden sm:hidden lg:block">
+                <p>Contact Akaunting by filling the form.</p>
+                <p>Please use the <a href="" class="text-neutral-900 underline-offset-8">forum </a>for technical support.</p>
+            </div>
+            <div class="mr-20">
+                <form action="" class="grid lg:grid-cols-2 gap-5">
+                    <div class="col-span-2 flex flex-col sm:col-span-2 lg:col-span-1">
+                        <label for="name">Name <span class="text-red-600">*</span></label>
+                        <input type="text" name="name" id="name" class="rounded-md js-hover">
+                    </div>              
+                    <div class="col-span-2 flex flex-col sm:col-span-2 lg:col-span-1">    
+                        <label for="name">E-mail <span class="text-red-600">*</span></label>
+                        <input type="email" name="email" id="email" class="rounded-md js-hover">
+                    </div>  
+                    <div class="col-span-2 flex flex-col">
+                        <label for="name">Message <span class="text-red-600">*</span></label>
+                        <textarea name="message" id="message" cols="40" rows="10" class="rounded-md js-hover"></textarea>
+                    </div>
+                    <div class="col-span-2 flex flex-col sm:col-span-2 lg:col-span-1">
+                        <label for="job">Choose Your Job <span class="text-red-600">*</span></label>
+                        <select name="job" id="" class="rounded-md js-hover">
+                            <option value="">Choose</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="gdesinger">Graphic Desinger</option>
+                            <option value="pmanager">Project Manager</option>
+                        </select>
+                    </div>
+                    <div class="col-span-2 flex flex-col sm:col-span-2 lg:col-span-1">  
+                        <label for=""> Choose a Gender <span class="text-red-600">*</span> </label>
+                        <div>
+                            <input type="radio" name="gender" id="woman">
+                            <label for="woman" >Woman</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="man">
+                            <label for="man">Man</label>
+                        </div>                
+                    </div>
+                    <div class="col-span-2 flex flex-col sm:col-span-2 lg:col-span-1">   
+                        <label for="date">Choose Today's Date </label>
+                        <input type="date" name="date" id="" class="rounded-md js-hover">
+                    </div>
+                    <div class="col-span-2 flex flex-col sm:col-span-2 lg:col-span-1">
+                        <label for="pfp">Profil Pictures </label>
+                        <input type="file" name="pfp" id="">
+                    </div>
+                    <div class="col-span-2 flex flex-col">
+                        <label for="hobbies">Choose Your Hobbies </label>
+                        <br>
+                        <div>
+                            <input type="checkbox" name="hobbies" id="h-webdesign">
+                            <label for="h-webdesign">Web Design</label>
+                        </div>    
+                        <div>
+                            <input type="checkbox" name="hobbies" id="h-watchingmovie">
+                            <label for="h-watchingmovie">Watching movies</label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" name="hobbies" id="h-cook" >
+                            <label for="h-cook">Cooking</label>
+                        </div> 
+                        <div>
+                            <input type="checkbox" name="hobbies" id="h-astrology">
+                            <label for="h-astrology">Astrology</label>
+                        </div>            
+                    </div>
+                    <button onclick="fn()" type="submit" class="text-white bg-purple-800 col-span-2 p-2 rounded-md dable">Send</button>
+               </form>                                     
+           </div>
+       </div>
+    </section>
+
+    <footer class="w-full h-auto bg-slate-100">
+        <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-10 justify-between mx-10 px-8 py-12 leading-10 text-gray-600  ">
+            <div class="leading-6">
+               <img src="img/akaunting-logo-horizontal.svg" alt="akaunting" class="w-40">
+               <p class="w-56">Online, open source and free accounting software built with modern technologies.
+                Track your income and expenses with ease.</p>
+            </div>
+            <div>
+                <ul class="flex flex-col ">
+                    <li><a class="font-bold">TRENDING APPS</a></li>
+                    <li class="hover:text-gray-800"><a href="">Double-Entry</a></li>
+                    <li class="hover:text-gray-800"><a href="">Inventory</a></li>
+                    <li class="hover:text-gray-800"><a href="">Custom Fields</a></li>
+                    <li class="hover:text-gray-800"><a href="">Estimates (Quotes)</a></li>
+                    <li class="hover:text-gray-800"><a href="">Projects</a></li>
+                    <li class="hover:text-gray-800"><a href="">Expenses</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a class="font-bold">RESOURCES</a></li>
+                    <li class="hover:text-gray-800"><a href="">Plans</a></li>
+                    <li class="hover:text-gray-800"><a href="">$100K Apps Fund</a></li>
+                    <li class="hover:text-gray-800"><a href="">Documentation</a></li>
+                    <li class="hover:text-gray-800"><a href="">Community Support</a></li>
+                    <li class="hover:text-gray-800"><a href="">Developers</a></li>
+                    <li class="hover:text-gray-800"><a href="">Free Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="w-64 ">
+                    <li><a class="font-bold">LINKS</a></li>
+                    <li class="hover:text-gray-800"><a href="">Open Source Accounting Software</a></li>
+                    <li class="hover:text-gray-800"><a href="">Free Wave Accounting Alternative</a></li>
+                    <li class="hover:text-gray-800"><a href="">Online Accounting Software</a></li>
+                    <li class="hover:text-gray-800"><a href="">Free QuickBooks Alternative</a></li>
+                    <li class="hover:text-gray-800"><a href="">Free FreshBooks Alternative</a></li>
+                </ul>
+            </div> 
+        </div>
+        <div>
+            <ul class="lg:flex flex-row space-x-10 p-10 text-gray-500 border-y-2 ">
+                <li><a>Copyright © 2017-2022 Akaunting Inc.</a></li>
+                <li class="hidden sm:hidden lg:flex"><a href="">About</a></li>
+                <li class="hidden sm:hidden lg:flex"><a href="">Terms </a></li>
+                <li class="hidden sm:hidden lg:flex"><a href=""> Privacy  </a></li>
+                <li class="hidden sm:hidden lg:flex"><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function fn() {
+            var element = document.querySelector('.dable');
+            element.setAttribute('disabled', true);
+        }
+
+        document.querySelectorAll('.js-hover').forEach(function (item) {
+            item.addEventListener('focus', clickHover);
+            item.addEventListener('blur', blurInput);
+            item.addEventListener('change',changeAlert);
+
+            function clickHover() {
+                item.style.borderColor = "red";
+            }
+
+            function blurInput() {
+                item.style.borderColor = "grey";
+            }
+
+            function changeAlert() {
+            alert("Succesful");
+            }
+        });
+       
+        
+    </script>
+</body>
+</html>

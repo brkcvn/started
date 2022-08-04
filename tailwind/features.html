@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akaunting</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://kit.fontawesome.com/433a851cf8.js" crossorigin="anonymous"></script>
+    <style>
+        .active-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="relative w-full h-24 border-b-2 border-gray-200 text-gray-500 font-semibold z-10">
+        <div class="flex justify-between items-center mx-6">
+            <div class="h-full w-52 p-4">
+                <img src="img/akaunting-logo-horizontal.svg" alt="akaunting">
+            </div>
+            <div>
+                <ul class="hidden space-x-10 p-6 sm:hidden lg:flex flex-row xl:flex flex-rows">
+                    <li class="hover:text-gray-600"><a href="">Apps</a></li>
+                    <li class="hover:text-gray-600"><a href="">Features</a></li>
+                    <li class="hover:text-gray-600"><a href="">Support</a></li>
+                    <li class="hover:text-gray-600"><a href="">Blog</a></li>
+                    <li class="hover:text-gray-600"><a href="">Plans</a></li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 gap-8 h-1/2 justify-between">
+                <a href="" class="bg-green-700 p-4 text-white rounded-xl hidden lg:flex justify-center items-center hover:bg-green-800">Get Started</a>
+                <button onclick="fn1()" class="bg-gray-600 text-white w-14 h-14 rounded-full hidden text-lg lg:flex items-center justify-center">M</button> 
+            </div>
+        </div>  
+        <div class="w-32 text-left hidden z-20 menu">
+            <ul class="absolute right-8 py-3  bg-white border-slate-200 border-2 rounded-lg grid grid-rows-4 gap-1">
+                <li class="pr-28 pl-3 hover:bg-gray-200"><a href="">Dashboard</a></li>
+                <li class="pr-28 pl-3 hover:bg-gray-200"><a href="">Subscriptions</a></li>
+                <li class="pr-28 pl-3 hover:bg-gray-200"><a href="">Tickets</a></li>
+                <li class="pr-28 pl-3 hover:bg-gray-200 border-t-2"><a href="">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="text-gray-500">
+        <div class="flex flex-col lg:text-center text-gray-500 lg:p-36 p-6">
+            <h1 class="font-extrabold text-5xl pb-5">Features</h1>
+            <span class="text-2xl">Everything you need to know about Akaunting</span>
+        </div>
+        <div class="flex flex-col text-center">
+            <h2 class="font-extrabold text-4xl text-black pb-5">Easy Accounting</h2>
+            <p class="text-gray-500 text-2xl lg:pr-36 lg:pl-36">Akaunting is a free and online accounting software designed for small businesses to manage their finances and stay on top of their cash flow. Invoicing, accepting online payments and keeping track of expenses couldn't be simpler.</p>
+        </div>
+        <div>
+            <img src="img/akaunting-dashboard (1).png" alt="dashboard" class="lg:p-16 p-5">
+        </div>
+        <div>
+            <h3 class="font-extrabold text-4xl text-black text-center">Everything you need to manage your business</h3>
+            <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-10 gap-6 p-10">
+                <div class="bg-slate-100 lg:p-12 p-8 relative">
+                    <div class="absolute text-center bg-indigo-900 p-3 lg:left-40 left-32 rounded-lg -top-5">
+                        <i class="fa-solid fa-file-invoice text-white text-lg"></i>
+                    </div>
+                    <h6 class="text-black text-xl text-center font-semibold pb-5">Bank Accounts</h6>
+                    <p class="text-center">Create unlimited bank and cash accounts and track their opening and current balances.</p>
+                </div>
+                <div class="bg-slate-100 p-12 relative">
+                    <div class="absolute text-center bg-indigo-900 p-3 lg:left-40 left-32 rounded-lg -top-5">
+                        <i class="fa-solid fa-building text-white text-lg"></i>
+                    </div>
+                    <h6 class="text-black text-xl text-center font-semibold pb-5">Multi Company</h6>
+                    <p class="text-center">Manage the finances of multiple companies from one admin panel. Assign users to different companies.</p>
+                </div>
+                <div class="bg-slate-100 p-12 relative">
+                    <div class="absolute text-center bg-indigo-900 p-3 lg:left-40 left-32 rounded-lg -top-5">
+                        <i class="fa-solid fa-flag text-white text-md"></i>
+                    </div>
+                    <h6 class="text-black text-xl text-center font-semibold pb-5">Powerful Reporting</h6>
+                    <p class="text-center">Get detailed financial reports to help you better visualize all the information you need to improve your business.</p>
+                </div>
+                <div class="bg-slate-100 p-12 relative">
+                    <div class="absolute text-center bg-indigo-900 p-3 lg:left-40 left-32 rounded-lg -top-5">
+                        <i class="fa-solid fa-users text-white text-md"></i>
+                    </div>
+                    <h6 class="text-black text-xl text-center font-semibold pb-5">Client Portal</h6>
+                    <p class="text-center">Share the transactions and invoices with your clients and accept bulk payments, online.</p>
+                </div>
+                <div class="bg-slate-100 p-12 relative">
+                    <div class="absolute text-center bg-indigo-900 p-3 lg:left-40 left-32 rounded-lg -top-5">
+                        <i class="fa-solid fa-circle-notch text-white text-md"></i>
+                    </div>
+                    <h6 class="text-black text-xl text-center font-semibold pb-5">Recur Everything</h6>
+                    <p class="text-center">Automatically create invoices, revenues, bills, and payments for ongoing jobs. With just a click.</p>
+                </div>
+                <div class="bg-slate-100 p-12 relative">
+                    <div class="absolute text-center bg-indigo-900 p-3 lg:left-40 left-32 rounded-lg -top-5">
+                        <i class="fa-solid fa-user-check text-white text-md"></i>
+                    </div>
+                    <h6 class="text-black text-xl text-center font-semibold pb-5">Customer Summary</h6>
+                    <p class="text-center">See the customer profile, address, list of transactions, and paid, open, and overdue totals at a glance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-green-700 text-white rounded-xl hidden lg:flex justify-center items-center hover:bg-green-800 w-32 h-12 m-auto">
+            <a href="">Start Today</a>
+        </div>
+        <div>
+            <h2 class="font-extrabold text-4xl text-black lg:p-24 text-center">All-in-one platform</h2>
+        </div>
+        <div class="grid lg:grid-cols-4 grid-cols-1 gap-10 p-12">
+            <div class="flex flex-row">
+                <div>
+                    <i class="fa-solid fa-check text-green-700 pr-5"></i>
+                </div>
+                <div>
+                    <h6 class="pb-3 text-black text-xl font-semibold">Various Payments</h6>
+                    <p>Add non-billable expenses as payments in order to keep your bank/cash account balances up-to-date.</p>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <div>
+                    <i class="fa-solid fa-check text-green-700 pr-5"></i>
+                </div>
+                <div>
+                    <h6 class="pb-3 text-black text-xl font-semibold">Tax Rates</h6>
+                    <p>Set up different names for each tax, and link specific taxes to specific products or transactions to save you time.</p>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <div>
+                    <i class="fa-solid fa-check text-green-700 pr-5"></i>
+                </div>
+                <div>
+                    <h6 class="pb-3 text-black text-xl font-semibold">Multi-Currency</h6>
+                    <p>Send invoices and add expenses in any currency and let the system convert them in your main currency.</p>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <div>
+                    <i class="fa-solid fa-check text-green-700 pr-5"></i>
+                </div>
+                <div>
+                    <h6 class="pb-3 text-black text-xl font-semibold">Discount</h6>
+                    <p>Encourage client loyalty with your work by giving them a discount from the usual cost.</p>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <div>
+                    <i class="fa-solid fa-check text-green-700 pr-5"></i>
+                </div>
+                <div>
+                    <h6 class="pb-3 text-black text-xl font-semibold">Unlimited Attachments</h6>
+                    <p>Attach your business files and/or receipts to invoices, expenses, payments for original evidence.</p>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <div>
+                    <i class="fa-solid fa-check text-green-700 pr-5"></i>
+                </div>
+                <div>
+                    <h6 class="pb-3 text-black text-xl font-semibold">Transaction Categories</h6>
+                    <p>Create categories for incomes, expenses and items and see the flow of your business at a glance.</p>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <div>
+                    <i class="fa-solid fa-check text-green-700 pr-5"></i>
+                </div>
+                <div>
+                    <h6 class="pb-3 text-black text-xl font-semibold">Bulk Actions</h6>
+                    <p>Enable, disable, export, and delete records easily in batch mode.</p>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <div>
+                    <i class="fa-solid fa-check text-green-700 pr-5"></i>
+                </div>
+                <div>
+                    <h6 class="pb-3 text-black text-xl font-semibold">Dashboards & Widgets</h6>
+                    <p>Create dashboards/widgets that serve different purposes and share them with your staff/accountant.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-green-700 text-white rounded-xl hidden lg:flex justify-center items-center hover:bg-green-800 w-32 h-12 m-auto">
+            <a href="">See Plans</a>
+        </div>
+        <div class="bg-green-700 text-white p-5 mt-10">
+            <div>
+                <h3 class="text-3xl font-black lg:ml-20 lg:p-10 pb-10">Some of the great features of Akaunting</h3>
+            </div>
+            <div class=" grid lg:grid-cols-4 grid-cols-1 lg:px-24 gap-12 lg:p-12">
+                <div>
+                    <div class="bg-green-600 p-4 rounded-md w-10 h-11 flex justify-center mb-3">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h6 class="font-semibold text-lg mb-3">Free Accounting</h6>
+                    <p>Completely Free. No setup fees. No hidden charges. Not a free limited version. Free means free.</p>
+                </div>
+                <div>
+                    <div class="bg-green-600 p-4 rounded-md  w-10 h-11 flex justify-center mb-3">
+                        <i class="fa-solid fa-display"></i>
+                    </div>
+                    <h6 class="font-semibold text-lg mb-3">Online Accounting</h6>
+                    <p>See your financials online anytime, anywhere on your Mac, PC, tablet or mobile phone. No limits.</p>
+                </div>
+                <div>
+                    <div class="bg-green-600 p-4 rounded-md w-10 h-11 flex justify-center mb-3">
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <h6 class="font-semibold text-lg mb-3">Open Source Accounting</h6>
+                    <p>Take care about the privacy of your financials. Akaunting is Open Source so you can install on your host.</p>
+                </div>
+                <div>
+                    <div class="bg-green-600 p-4 rounded-md w-10 h-11 flex justify-center mb-3">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <h6 class="font-semibold text-lg mb-3">Easy Invoicing</h6>
+                    <p>Send professional invoices to clients and start accepting online payments, no commission/transaction fee.</p>
+                </div>
+                <div>
+                    <div class="bg-green-600 p-4 rounded-md w-10 h-11 flex justify-center mb-3">
+                        <i class="fa-regular fa-file"></i>
+                    </div>
+                    <h6 class="font-semibold text-lg mb-3">Deposits & Transfers</h6>
+                    <p>Add deposits to and transfers between accounts and keep the balance of your bank accounts active.</p>
+                </div>
+                <div>
+                    <div class="bg-green-600 p-4 rounded-md w-10 h-11 flex justify-center mb-3">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h6 class="font-semibold text-lg mb-3">Vendor Management</h6>
+                    <p>Create vendors so you could assign bills and payments to them and later filter their transactions easily.</p>
+                </div>
+                <div>
+                    <div class="bg-green-600 p-4 rounded-md w-10 h-11 flex justify-center mb-3">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h6 class="font-semibold text-lg mb-3">Customer Management</h6>
+                    <p>Create clients and send invoices to them. You can also set a password so they could to access the client portal.</p>
+                </div>
+                <div>
+                    <div class="bg-green-600 p-4 rounded-md w-10 h-11 flex justify-center mb-3">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <h6 class="font-semibold text-lg mb-3">Billable Expenses</h6>
+                    <p>Create and manage bills so your finances are always accurate and healthy. Know what and when to pay.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid lg:grid-cols-2 grid-cols-1 lg:p-28 p-12 gap-20">
+            <div class="pt-20">
+                <h4 class="text-black text-3xl font-extrabold">Modern Technologies</h4>
+                <p class=" pt-5">Akaunting is built with modern technologies such as Laravel, VueJS, Bootstrap 4, RESTful API etc.</p>
+            </div>
+            <div class="text-black text-lg">
+                <div class="flex flex-row">
+                    <i class="fa-solid fa-check text-green-700 pt-4 pr-5"></i>
+                    <span class="pt-3">Easy-to-use Interface</span>
+                </div>
+                <div class="flex flex-row">
+                    <i class="fa-solid fa-check text-green-700 pt-4 pr-5"></i>
+                    <span class="pt-3">Mobile & Tablet Ready Interface</span>
+                </div>
+                <div class="flex flex-row">
+                    <i class="fa-solid fa-check text-green-700 pt-4 pr-5"></i>
+                    <span class="pt-3">Multilingual Admin & Client Panel</span>
+                </div>
+                <div class="flex flex-row">
+                    <i class="fa-solid fa-check text-green-700 pt-4 pr-5"></i>
+                    <span class="pt-3">Designed For Small Businesses</span>
+                </div>
+                <div class="flex flex-row">
+                    <i class="fa-solid fa-check text-green-700 pt-4 pr-5"></i>
+                    <span class="pt-3">100% Financial Data Ownership</span>
+                </div>
+                <div class="flex flex-row">
+                    <i class="fa-solid fa-check text-green-700 pt-4 pr-5"></i>
+                    <span class="pt-3">Lifetime FREE Updates</span>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slate-100 flex lg:flex-row flex-col p-10 my-16">
+            <div>
+                <h5 class="font-black text-black text-4xl pb-12 pr-7">A better way to manage your business.</h5>
+            </div>
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-10">
+                <div>
+                    <div class="bg-indigo-900 text-center w-12 h-12 pt-3 rounded-md mb-5">
+                        <i class="fa-solid fa-globe text-white"></i>
+                    </div>
+                    <h6 class="text-black text-lg font-semibold">App Store</h6>
+                    <p>Extend Akaunting without leaving the admin panel, you can install or purchase anything.</p>
+                </div>
+                <div>
+                    <div class="bg-indigo-900 text-center w-12 h-12 pt-3 rounded-md mb-5">
+                        <i class="fa-solid fa-scale-balanced text-white"></i>
+                    </div>
+                    <h6 class="text-black text-lg font-semibold">Multilingual Panel</h6>
+                    <p>Manage your finances in your language. Switch between languages easily, instantly.</p>
+                </div>
+                <div>
+                    <div class="bg-indigo-900 text-center w-12 h-12 pt-3 rounded-md mb-5">
+                        <i class="fa-solid fa-key text-white"></i>
+                    </div>
+                    <h6 class="text-black text-lg font-semibold">Fine-Grained Permissions</h6>
+                    <p>Configure permissions on a Role level to protect and simplify their management experience.</p>
+                </div>
+                <div>
+                    <div class="bg-indigo-900 text-center w-12 h-12 pt-3 rounded-md mb-5">
+                        <i class="fa-solid fa-envelope text-white"></i>
+                    </div>
+                    <h6 class="text-black text-lg font-semibold">Email Templates</h6>
+                    <p>Customize the content of emails sent to your customers as you wish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full h-auto bg-slate-100">
+        <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-10 justify-between mx-10 px-8 py-12 leading-10 text-gray-600  ">
+            <div class="leading-6">
+               <img src="img/akaunting-logo-horizontal.svg" alt="akaunting" class="w-40">
+               <p class="w-56">Online, open source and free accounting software built with modern technologies.
+                Track your income and expenses with ease.</p>
+            </div>
+            <div>
+                <ul class="flex flex-col ">
+                    <li><a class="font-bold">TRENDING APPS</a></li>
+                    <li class="hover:text-gray-800"><a href="">Double-Entry</a></li>
+                    <li class="hover:text-gray-800"><a href="">Inventory</a></li>
+                    <li class="hover:text-gray-800"><a href="">Custom Fields</a></li>
+                    <li class="hover:text-gray-800"><a href="">Estimates (Quotes)</a></li>
+                    <li class="hover:text-gray-800"><a href="">Projects</a></li>
+                    <li class="hover:text-gray-800"><a href="">Expenses</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a class="font-bold">RESOURCES</a></li>
+                    <li class="hover:text-gray-800"><a href="">Plans</a></li>
+                    <li class="hover:text-gray-800"><a href="">$100K Apps Fund</a></li>
+                    <li class="hover:text-gray-800"><a href="">Documentation</a></li>
+                    <li class="hover:text-gray-800"><a href="">Community Support</a></li>
+                    <li class="hover:text-gray-800"><a href="">Developers</a></li>
+                    <li class="hover:text-gray-800"><a href="">Free Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="w-64 ">
+                    <li><a class="font-bold">LINKS</a></li>
+                    <li class="hover:text-gray-800"><a href="">Open Source Accounting Software</a></li>
+                    <li class="hover:text-gray-800"><a href="">Free Wave Accounting Alternative</a></li>
+                    <li class="hover:text-gray-800"><a href="">Online Accounting Software</a></li>
+                    <li class="hover:text-gray-800"><a href="">Free QuickBooks Alternative</a></li>
+                    <li class="hover:text-gray-800"><a href="">Free FreshBooks Alternative</a></li>
+                </ul>
+            </div> 
+        </div>
+        <div>
+            <ul class="lg:flex flex-row space-x-10 p-10 text-gray-500 border-y-2 ">
+                <li><a>Copyright © 2017-2022 Akaunting Inc.</a></li>
+                <li class="hidden sm:hidden lg:flex"><a href="">About</a></li>
+                <li class="hidden sm:hidden lg:flex"><a href="">Terms </a></li>
+                <li class="hidden sm:hidden lg:flex"><a href=""> Privacy  </a></li>
+                <li class="hidden sm:hidden lg:flex"><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+    function fn1() {
+        var element = document.querySelector('.menu');
+        element.classList.toggle('active-menu');
+    }
+    </script>
+</body>
+</html>

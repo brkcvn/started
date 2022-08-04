@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <footer>
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="relative hidden lg:flex justify-center items-center h-screen js-colose"></div>                        
+            
+            <div class="px-8 m-auto">
+                <div class="w-24 m-auto js-logo"></div>
+
+                <div class="flex justify-center items-center">
+                    <form action="" class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                        <div class="flex flex-col">
+                            <label for="f-name" class="font-medium">First name <span class="text-red">*</span></label>
+                            <input type="text" name="" id="f-name" class="rounded-lg border-slate-400 p-1 js-border">
+                        </div>
+    
+                        <div class="flex flex-col">
+                            <label for="l-name" class="font-medium">Last name <span class="text-red">*</span></label>
+                            <input type="text" name="" id="l-name" class="rounded-lg border-slate-400 p-1 js-border">
+                        </div>
+    
+                        <div class="flex flex-col justify-end">
+                            <label for="c-do" class="font-medium">What does your company do?<span class="text-red">*</span></label>
+                            <select name="" id="c-do" class="rounded-md p-1 border-slate-400 text-slate-500 js-border">
+                                <option value="" class="js-option">Please Select</option>
+                                <option value="development">Software Development</option>
+                                <option value="food">Food Services</option>
+                                <option value="art">Art And Design</option>
+                            </select>
+                        </div>
+    
+                        <div class="flex flex-col">
+                            <label for="c-role" class="font-medium">What is your role at the company?<span class="text-red">*</span></label>
+                            <select name="" id="c-role" class="rounded-md p-1 border-slate-400 text-slate-500 js-border">
+                                <option value="" class="js-option">Please Select</option>
+                                <option value="other">Other</option>
+                                <option value="cto">CTO</option>
+                                <option value="owner-founder">Owner / Founder</option>
+                            </select>
+                        </div>
+                        
+                        <div class="flex flex-col">
+                            <label for="c-long" class="font-medium">How long have you been in the business?<span class="text-red">*</span></label>
+                            <select name="" id="c-long" class="rounded-md p-1 border-slate-400 text-slate-500 js-border">
+                                <option value="" class="js-option">Please Select</option>
+                                <option value="4years">3-4 Years</option>
+                                <option value="15years">15+ Years</option>
+                                <option value="lessyears">Less Than a Year</option>
+                            </select>
+                        </div>
+    
+                        <div class="flex flex-col justify-end">
+                            <label for="c-members" class="font-medium">Number of Team Members<span class="text-red">*</span></label>
+                            <select name="" id="c-members" class="rounded-md p-1 border-slate-400 text-slate-500 js-border">
+                                <option value="" class="js-option">Please Select</option>
+                                <option value="2to4">2 To 4</option>
+                                <option value="justme">Just Me</option>
+                                <option value="morethan">More Than 50</option>
+                            </select>
+                        </div>
+    
+                        <div class="flex flex-col">
+                            <label for="c-bill" class="font-medium">What do you use to bill your customers?<span class="text-red">*</span> </label>
+                            <select name="" id="c-bill" class="rounded-md p-1 border-slate-400 text-slate-500 js-border">
+                                <option value="" class="js-option">Please Select</option>
+                                <option value="another">Another accounting software</option>
+                                <option value="penpaper">Pen & paper</option>
+                                <option value="idont">I dont't use anything</option>
+                            </select>
+                        </div>
+    
+                        <div class="flex flex-col" >
+                            <label for="c-like" class="font-medium">What would you like to do in Akaunting?<span class="text-red">*</span></label>
+                            <select name="" id="c-like" class="rounded-md p-1 border-slate-400 text-slate-500 js-border">
+                                <option value="" class="js-option">Please Select</option>
+                                <option value="inventory">Manage your inventory</option>
+                                <option value="bills">Track your bills</option>
+                                <option value="tax">Track your tax</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <button type="submit" class="py-2 px-24 mt-3 bg-slate-600 rounded-md text-white hover:bg-indigo-900">Next Step</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
