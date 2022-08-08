@@ -68,11 +68,11 @@
         </div>
         <div class="flex flex-col lg:flex-row xl:flex-col justify-between bg-indigo-100 lg:p-20 p-10 my-20">
             <div>
-                <span class="text-black font-black text-4xl xl:mx-52">Ready to start?</span>
-                <p class="text-indigo-700 font-black text-4xl xl:mx-52">Install the Double-Entry today.</p>
+                <span class="text-black font-black text-4xl xl:mx-52 js-ready"></span>
+                <p class="text-indigo-700 font-black text-4xl xl:mx-52 js-install"></p>
             </div>
             <div class="mt-8">
-                <a href="" class="bg-indigo-700 text-white font-semibold rounded-lg p-3 hover:bg-indigo-800 xl:ml-52">Upgrade Premium</a>
+                <button type="button" class="js-upgrade bg-indigo-700 text-white font-semibold rounded-lg p-3 hover:bg-indigo-800 xl:ml-52">Upgrade Premium</button>
             </div>
         </div>
         <div class="flex flex-col lg:flex-row xl:mx-52">
@@ -248,6 +248,7 @@
         document.querySelector(".js-click-month").addEventListener("click", changePriceSecond);
         document.querySelector(".js-scroll-from").addEventListener("click", scrollPage);
         document.addEventListener("scroll", headerFixed);
+        document.querySelector(".js-upgrade").addEventListener("click",showSection);
 
         let learn_scroll = document.querySelector(".js-learn");
         let close_scroll = document.querySelector(".js-close");
@@ -297,6 +298,40 @@
         function headerFixed() {
             document.querySelector(".js-fixed").style.position = "fixed";
         }
+
+       function showSection() {
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+            method:"POST",
+            headers:{
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify({userId:1,id:101,title:"baslik",body:"ea molestias quasi exercitationem repellat qui"})
+        }).then((response) => 
+            response.json()
+        )
+        .then((response) => {
+            console.log(response);
+        }
+            
+        )
+        .catch((error) =>
+         console.log(error)
+        );
+
+        /*.then((response) => 
+            response.json()
+        )
+        .then((response) => 
+            document.querySelector(".js-ready").innerHTML="Ready to start?",
+            document.querySelector(".js-install").innerHTML="Install the Double-Entry today."
+        )
+        .catch((error) =>
+         console.log(error)
+        );
+        */
+            
+       }
     </script>
 </body>
 </html>
