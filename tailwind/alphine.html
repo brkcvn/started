@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+<!-- toggle example -->
+<!-- <div class="relative bg-gray-100 pb-20 my-40 section-container" x-data="{ open : true, close : false }">
+    <h2 class="pt-2 text-black font-black text-center text-5xl">Simple no-tricks pricing</h2>
+    <div class="lg:absolute lg:-bottom-24 justify-center bg-white p-12 lg:p-10 m-10 lg:m-0 flex flex-col lg:flex-row rounded-lg border-2 xl:mx-36">
+        <div class="mb-16">
+            <h4 class="text-3xl text-black font-black mb-5">Increase your productivity</h4>
+            <p class="lg:w-4/5">By subscribing, you don't have to worry about any kind of upgrade costs. Just keep using the software and enjoy all the new features as long as your subscription lasts.</p>
+            <h6 class="text-blue-900 font-medium my-6">WHAT'S INCLUDED</h6>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div class="flex lg:flex-row">
+                    <i class="fa-solid fa-circle-check mt-1 mr-2 text-green-600"></i>
+                    <p>Pay-as-you-go</p>
+                </div>
+                <div class="flex flex-row">
+                    <i class="fa-solid fa-circle-check mt-1 mr-2 text-green-600"></i> 
+                    <p>Unlimited installation</p>
+                </div>
+                <div class="flex flex-row">
+                    <i class="fa-solid fa-circle-check mt-1 mr-2 text-green-600"></i>
+                    <p>Updates & support during the subscription period</p>
+                </div>
+                <div class="flex flex-row">
+                    <i class="fa-solid fa-circle-check mt-1 mr-2 text-green-600"></i>
+                    <p>Secure cloud storage</p>
+                </div>
+                <div>
+                    <div>
+                        <a href="javascript:," class="underline hover:text-black ">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="flex flex-col items-center bg-slate-50 lg:w-2/5 lg:-m-10 lg:p-10 -m-12" x-show="open">
+            <span class="flex"><span class="text-black font-black text-5xl my-6">$6</span><span class="my-6">per month</span></span>
+            <p class="mb-2 font-semibold text-sm text-center">Billed yearly.</p>
+            <p class="mb-3 font-semibold text-sm text-center">You save $36 a year!</p>
+            <div class="mt-8 w-60 pl-12">
+                <a href="" class="bg-indigo-700 text-white font-semibold rounded-lg p-3 hover:bg-indigo-800">Upgrade Premium</a>
+            </div>
+            <button class="text-sm font-semibold my-5" x-on:click="close = true, open = false">I want to use my own server.</button>
+        </div>
+        <div class="flex flex-col items-center bg-slate-50 lg:w-2/5 -m-12 lg:-m-10 lg:p-10" x-show="close">
+            <p class="text-black mt-6">On-Premise</p>
+            <span class="flex"><span class="text-black font-black text-5xl mx-2 mb-6">$72</span><span>per month</span></span>
+            <p class="mb-2 font-semibold text-sm text-center">Billed yearly.</p>
+            <div class="mt-8 flex flex-row w-60">
+                <a href="" class="bg-green-700 text-white font-semibold rounded-lg p-3 hover:bg-green-800">Buy Now</a>
+                <a href="" class="bg-indigo-700 text-white font-semibold rounded-lg p-3 hover:bg-indigo-800 ml-5">Add To Cart</a>
+            </div>
+            <button class="text-sm font-semibold my-5" x-on:click="open = true , close = false">I want to use the Cloud service.</button>
+        </div> 
+    </div>
+</div> -->
+
+
+
+<!-- alert message -->
+<!-- <div x-data="{  }">
+    <button class="bg-slate-300 p-2 rounded-md" x-on:click="alert('ok.')">Click Me!</button>
+</div> -->
+
+
+
+<!-- border color red -->
+<!-- <div class="flex justify-center" x-data="{ border : 'border-red-500' }">
+    <form action="" class="grid grid-cols-2 gap-5">
+        <div class="flex flex-col" x-on:click=" borderColor : true ">
+            <label for="first_name" class="font-semibold">Kullanıcı Adı: </label>
+            <input type="text" name="first_name" class="rounded-lg" x-bind:class="border">
+        </div>
+
+        <div class="flex flex-col">
+            <label for="last_name" class="font-semibold">Soyadı: </label>
+            <input type="text" name="last_name" class="rounded-lg" x-bind:class="border">
+        </div>
+
+        <div class="flex flex-col">
+            <label for="email" class="font-semibold">E-mail: </label>
+            <input type="email" name="email" class="rounded-lg" x-bind:class="border">
+        </div>
+
+        <div>
+            <button type="submit" class="bg-slate-600 text-white rounded-md px-8 py-2 mt-6">Gönder</button>
+        </div>
+    </form>            
+</div> -->
+
+
+
+<!-- input's border color is red when click on button -->
+<!-- <div class="flex justify-center" x-data="{ borderColor : false }">
+    <form action="" class="grid grid-cols-2 gap-5">
+        <div class="flex flex-col">
+            <label for="first_name" class="font-semibold">Kullanıcı Adı: </label>
+            <input type="text" name="first_name" class="rounded-lg border" x-bind:class=" borderColor ? 'border-red-500' : 'border-black' ">
+        </div>
+    
+        <div class="flex flex-col">
+            <label for="last_name" class="font-semibold">Soyadı: </label>
+            <input type="text" name="last_name" class="rounded-lg border" x-bind:class=" borderColor ? 'border-red-500' : 'border-black' ">
+        </div>
+
+        <div class="flex flex-col">
+            <label for="email" class="font-semibold">E-mail: </label>
+            <input type="email" name="email" class="rounded-lg border" x-bind:class=" borderColor ? 'border-red-500' : 'border-black' " >
+        </div>
+
+        <div>
+            <button type="button" class="bg-slate-600 text-white rounded-md px-8 py-2 mt-6" x-on:focus="borderColor = true" x-on:blur="borderColor = false">Gönder</button>
+        </div>
+    </form>            
+</div> -->
+
+
+
+<!-- clears the textbox when the button is click and when textbox's inner text is changed border color is red and x-text example -->
+<!-- <div x-data="{ borderColor : false, message : '', clear : false , submit : 'Gönder' }">
+    <input type="text" x-on:change="borderColor = true" x-bind:class=" borderColor ? 'border-red-500' : 'border-black', clear ? message='' : '' " x-model="message">
+    <div>
+        <button type="button" class="bg-slate-600 text-white rounded-md px-8 py-2 mt-6" x-on:focus="borderColor = false" x-on:click=" clear = true " x-bind:class=" borderColor ? 'border-black' : 'border-red-500' " x-text="submit"></button>
+    </div>
+</div> -->
+
+
+
+</body>
+</html>
