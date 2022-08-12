@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/globe.gl@2.26.2/dist/globe.gl.min.js"></script>
+</head>
+<body>
+    <div id="globeViz" class="w-2/5"></div>
+    <script>
+        const ARC_REL_LEN = .8; // relative to whole arc
+            const FLIGHT_TIME = 770;
+            const NUM_RINGS = 4;
+            const RINGS_MAX_R = 8; // deg
+            const RING_PROPAGATION_SPEED = 5; // deg/sec
+            const globe = Globe()
+          .backgroundColor('#FFF')
+          .globeImageUrl('https://unpkg.com/three-globe@2.24.6/example/img/earth-blue-marble.jpg')
+          .ringColor(() => '#6EA152')
+          .arcColor(() => '#CCC')
+          .onGlobeClick(emitArc)
+          .arcDashLength(ARC_REL_LEN)
+          .arcDashGap(2)
+          .arcDashInitialGap(1)
+          .arcDashAnimateTime(FLIGHT_TIME)
+          .arcsTransitionDuration(0)
+          .ringMaxRadius(RINGS_MAX_R)
+          .ringPropagationSpeed(RING_PROPAGATION_SPEED)
+          .ringRepeatPeriod(FLIGHT_TIME * ARC_REL_LEN / NUM_RINGS)
+          (document.getElementById('globeViz'));
+          
+            let prevCoords = { lat: 0, lng: 0 };
+          function emitArc({ lat: endLat, lng: endLng }) {
+          const { lat: startLat, lng: startLng } = prevCoords;
+          setTimeout(() => { prevCoords = { lat: endLat, lng: endLng }}, FLIGHT_TIME);
+    
+          // add and remove arc after 1 cycle
+          const arc = { startLat, startLng, endLat, endLng };
+          globe.arcsData([...globe.arcsData(), arc]);
+          setTimeout(() => globe.arcsData(globe.arcsData().filter(d => d !== arc)), FLIGHT_TIME * 2);
+    
+          // add and remove start rings
+          const srcRing = { lat: startLat, lng: startLng };
+          globe.ringsData([...globe.ringsData(), srcRing]);
+          setTimeout(() => globe.ringsData(globe.ringsData().filter(r => r !== srcRing)), FLIGHT_TIME * ARC_REL_LEN);
+    
+          // add and remove target rings
+          setTimeout(() => {
+            const targetRing = { lat: endLat, lng: endLng };
+            globe.ringsData([...globe.ringsData(), targetRing]);
+            setTimeout(() => globe.ringsData(globe.ringsData().filter(r => r !== targetRing)), FLIGHT_TIME * ARC_REL_LEN);
+          }, FLIGHT_TIME);
+        }
+        
+    </script>
+</body>
+</html>

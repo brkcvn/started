@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/globe.gl@2.26.2/dist/globe.gl.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/433a851cf8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <div class="bg-white pb-8 sm:pb-12 lg:pb-32">
+    <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
+        <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
+            <div>
+                <div class="lg:mt-20">
+                    <div></div>
+                    <div class="mt-6 sm:max-w-xl">
+                        <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
+                            Client Portal
+                        </h2>
+                        <p class="mt-6 text-xl text-gray-500">
+                            Give your clients the ease of client portal. Share the transactions and invoices with your clients and accept bulk payments.
+                        </p>
+                        <a class="block w-60 mt-6 text-center rounded-md border border-transparent px-5 py-3 bg-default text-base font-medium text-white shadow hover:bg-default-hover sm:px-10" href="/start">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
+            <div class="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:ltr:right-0 lg:rtl:left-0 lg:w-1/2">
+                <div class="hidden sm:block">
+                    <div class="absolute inset-y-0 left-1/2 w-screen bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full"></div>
+                    <svg class="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0" width="404" height="392" fill="none" viewBox="0 0 404 392">
+                        <defs>
+                            <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"></rect>
+                            </pattern>
+                        </defs>
+                        <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
+                    </svg>
+                </div>
+                <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
+                    <img class="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none" src="https://assets.akaunting.com/site/img/pages/home/akaunting-client-portal.png" alt="Akaunting Client Portal">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <section data-map-section class="relative leading-7 text-gray-900 bg-white mb-24 border-solid overflow-x-hidden" style="overflow-y: hidden;">
+    <div class="box-border mx-auto border-solid lg:pl-8 max-w-7xl">
+      <div class="flex flex-col items-center leading-7 text-gray-900 border-0 border-gray-200 lg:flex-row">
+        <div class="box-border flex flex-col justify-center w-full h-full p-8 text-gray-900 border-solid lg:w-1/2 md:p-16 lg:p-0 lg:pl-10 lg:pr-20 mb-10 xl:mb-36" style="z-index: 99;">
+          <h2 class="m-0 text-3xl font-black leading-tight tracking-tight text-left text-black sm:text-4xl md:text-5xl">Worldwide usage</h2>
+          <p class="mt-2 text-xl text-left border-0 border-gray-200 text-slate-500">Used by thousands of people worldwide.</p>
+          <div class="grid gap-4 mt-8 leading-7 border-0 border-gray-200 sm:mt-10 sm:gap-6 lg:mt-12 lg:gap-8">
+            <div class="box-border flex items-start text-gray-900 border-solid">
+              <div class="flex items-center justify-center w-12 h-12 leading-7 bg-main-page-purple border-0 border-gray-200 rounded-full">
+                <p class="box-border m-0 text-xl text-white border-solid">
+                  <i class="fa-solid fa-earth-americas"></i>
+                </p>
+              </div>
+              <div class="flex-1 ml-6 leading-7 border-0 border-gray-200">
+                <h3 class="box-border m-0 text-lg font-semibold leading-tight tracking-tight text-black border-solid sm:text-xl">180 + Countries</h3>
+                <p class="box-border mt-2 text-base leading-normal text-slate-500 border-solid">Akaunting is used by thousands of people from 180+ countries around the world.</p>
+              </div>
+            </div>
+            <div class="box-border flex items-start text-gray-900 border-solid">
+              <div class="flex items-center justify-center w-12 h-12 leading-7 bg-main-page-purple border-0 border-gray-200 rounded-full">
+                <p class="box-border m-0 text-xl text-white border-solid">
+                  <i class="fa-solid fa-users"></i>
+                </p>
+              </div>
+              <div class="flex-1 ml-6 leading-7 border-0 border-gray-200">
+                <h3 class="box-border m-0 text-lg font-semibold leading-tight tracking-tight text-black border-solid sm:text-xl">150K+ Users</h3>
+                <p class="box-border mt-2 text-base leading-normal text-slate-500 border-solid">From freelancers to SMBs to enterprises, thousands of people is using Akaunting to keep their books.</p>
+              </div>
+            </div>
+            <div class="box-border flex items-start text-gray-900 border-solid">
+              <div class="flex items-center justify-center w-12 h-12 leading-7 bg-main-page-purple border-0 border-gray-200 rounded-full">
+                <p class="box-border m-0 text-xl text-white border-solid">
+                  <i class="fa-solid fa-language"></i>               
+                </p>
+              </div>
+              <div class="flex-1 ml-6 leading-7 border-0 border-gray-200">
+                <h3 class="box-border m-0 text-lg font-semibold leading-tight tracking-tight text-black border-solid sm:text-xl">50+ Languages</h3>
+                <p class="box-border mt-2 text-base leading-normal text-slate-500 border-solid">Thanks to its community, Akaunting is available in more than 50 languages and everyday being translated more.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="globeViz" class="absolute w-2/5 hidden lg:block scale-0 duration-700 ease-in-out transition-transform" style="margin-right: 400px; right:0;"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="bg-gray-100 border-t" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">
+        Footer
+    </h2>
+
+    <div class="max-w-7xl mx-auto py-8 lg:py-12 px-4 sm:px-6">
+        <div class="grid gap-10 mx-auto md:grid-cols-2 lg:grid-cols-4 lg:gap-x-18">
+            <div class="mb-8 lg:mb-0">
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Blog</h3>
+
+                <ul class="mt-4 space-y-4">
+	<li>
+		<a href="https://akaunting.com/blog/what-are-expense-accounts-in-accounting" class="text-base text-gray-500 hover:text-gray-900">What are Asset Accounts in accounting?</a>
+	</li>
+
+	<li>
+		<a href="https://akaunting.com/blog/what-is-a-1099-nec-form-used-for" class="text-base text-gray-500 hover:text-gray-900">What is a 1099 NEC form used for?</a>
+	</li>
+
+	<li>
+		<a href="https://akaunting.com/blog/what-are-capital-accounts-in-accounting" class="text-base text-gray-500 hover:text-gray-900">What are Capital Accounts in accounting?</a>
+	</li>
+
+	<li>
+		<a href="https://akaunting.com/blog/what-are-income-accounts-in-accounting" class="text-base text-gray-500 hover:text-gray-900">What are Income Accounts in accounting?</a>
+	</li>
+
+	<li>
+		<a href="https://akaunting.com/blog/single-and-double-entry-accounting-explained" class="text-base text-gray-500 hover:text-gray-900">Single and Double-entry Accounting Explained</a>
+	</li>
+</ul>
+            </div>
+
+            <div class="mb-8 lg:mb-0">
+                                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Trending Apps</h3>
+                
+                
+<ul class="mt-4 space-y-4">
+<li><a href="https://akaunting.com/apps/bank-feeds" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Bank Feeds</a></li>
+<li><a href="https://akaunting.com/apps/double-entry" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Double-Entry</a></li>
+<li><a href="https://akaunting.com/apps/inventory" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Inventory</a></li>
+<li><a href="https://akaunting.com/apps/custom-fields" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Custom Fields</a></li>
+<li><a href="https://akaunting.com/apps/estimates" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Estimates (Quotes)</a></li>
+<li><a href="https://akaunting.com/apps/projects" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Projects</a></li>
+<li><a href="https://akaunting.com/apps/expenses" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Expenses</a></li>
+
+</ul>
+
+            </div>
+
+            <div class="mb-8 lg:mb-0">
+                                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Resources</h3>
+                
+                
+<ul class="mt-4 space-y-4">
+<li><a href="https://akaunting.com/plans" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Plans</a></li>
+<li><a href="https://akaunting.com/free-tools" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Free Tools</a></li>
+<li><a href="https://akaunting.com/blog/announcing-100k-apps-fund" target="_self" class="text-base text-gray-500 hover:text-gray-900"> $100K Apps Fund</a></li>
+<li><a href="https://akaunting.com/docs" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Documentation</a></li>
+<li><a href="https://akaunting.com/forum" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Community Support</a></li>
+<li><a href="https://developer.akaunting.com" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Developers</a></li>
+<li><a href="https://akaunting.com/dedicated-support" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Dedicated Support</a></li>
+
+</ul>
+
+            </div>
+
+            <div class="mb-8 lg:mb-0">
+                                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Links</h3>
+                
+                
+<ul class="mt-4 space-y-4">
+<li><a href="https://akaunting.com/versions/akaunting-30" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Akaunting 3.0</a></li>
+<li><a href="https://akaunting.com/lp/accounting-software" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Accounting for Small Businesses</a></li>
+<li><a href="https://akaunting.com/blog/open-source-accounting-software" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Open Source Accounting Software</a></li>
+<li><a href="https://akaunting.com/wave-accounting-alternative" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Free Wave Accounting Alternative</a></li>
+<li><a href="https://akaunting.com/blog/online-accounting-software" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Online Accounting Software</a></li>
+<li><a href="https://akaunting.com/blog/free-quickbooks-alternative" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Free QuickBooks Alternative</a></li>
+<li><a href="https://akaunting.com/blog/free-freshbooks-alternative" target="_self" class="text-base text-gray-500 hover:text-gray-900"> Free FreshBooks Alternative</a></li>
+
+</ul>
+
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-between mx-auto mt-16 space-y-4 md:space-y-0 md:flex-row lg:mt-12">
+            <div class="flex space-x-4 text-sm text-center md:text-left">
+                <img src="https://assets.akaunting.com/site/img/logo/akaunting-logo.svg" alt="akaunting logo" class="h-14 mx-auto lg:-mx-2">
+<div class="text-gray-500 text-xs leading-normal space-y-1 mt-0.5">
+	<p>Online, open source and free accounting software for small businesses.<br>Track your income and expenses with ease.</p>
+	<p>© Akaunting 2022</p>
+</div>
+            </div>
+
+            <div class="relative">
+                                    
+                    <div data-language-text="" class="block cursor-pointer">
+                        <div class="flex items-center space-x-2 pb-1 border-b transition-all border-gray-300 hover:border-gray-900">
+                            <img src="https://assets.akaunting.com/site/img/flags/gb.png" class="w-4 h-4 rounded-full object-cover" alt="English">
+
+                            <div class="flex items-center space-x-4">
+                                <p class="text-gray-500">English</p>
+                                <i class="fas fa-chevron-down text-xs text-gray-500 transform transition-all"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                                    
+                    <div data-language-text="" class="hidden cursor-pointer">
+                        <div class="flex items-center space-x-2 pb-1 border-b transition-all border-gray-300 hover:border-gray-900">
+                            <img src="https://assets.akaunting.com/site/img/flags/tr.png" class="w-4 h-4 rounded-full object-cover" alt="Turkish">
+
+                            <div class="flex items-center space-x-4">
+                                <p class="text-gray-500">Türkçe</p>
+                                <i class="fas fa-chevron-down text-xs text-gray-500 transform transition-all"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                
+                <div data-select-menu="" class="absolute w-32 bg-white ltr:right-0 rtl:left-0 text-sm mt-1 shadow-sm transition-all hidden"><div data-language-choose="" lang="en" value="https://akaunting.com/" selected="" class="w-full flex items-center px-3 py-2 space-x-2 cursor-pointer hover:bg-gray-300">
+                        <img src="https://assets.akaunting.com/site/img/flags/gb.png" class="w-4 h-4 rounded-full object-cover" alt="English">
+
+                        <span>
+                            English
+                        </span>
+                    </div><div data-language-choose="" lang="tr" value="https://akaunting.com/tr" class="w-full flex items-center px-3 py-2 space-x-2 cursor-pointer hover:bg-gray-300">
+                        <img src="https://assets.akaunting.com/site/img/flags/tr.png" class="w-4 h-4 rounded-full object-cover" alt="Turkish">
+
+                        <span>
+                            Türkçe
+                        </span>
+                    </div></div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-between mx-auto mt-8 space-y-4 md:space-y-0 md:flex-row lg:mt-12">
+            <nav class="flex flex-wrap justify-center space-x-6">
+                <a href="/about" class="mb-2 text-gray-500 text-sm hover:text-gray-700" target="_self"> About</a>
+                <a href="/terms" class="mb-2 text-gray-500 text-sm hover:text-gray-700" target="_self"> Terms</a>
+                <a href="/privacy" class="mb-2 text-gray-500 text-sm hover:text-gray-700" target="_self"> Privacy</a>
+                <a href="/contact" class="mb-2 text-gray-500 text-sm hover:text-gray-700" target="_self"> Contact</a>
+            </nav>
+
+            <nav class="flex items-center space-x-4">
+    <a href="https://github.com/akaunting" class="text-gray-500 hover:text-gray-600" "="" target="_blank">
+        <span class="sr-only">GitHub</span>
+        <img src="https://assets.akaunting.com/site/img/social/github-brands.svg" class="w-5 h-5" alt="Github">
+      </a>
+      
+      <a href="https://youtube.com/akaunting" class="text-gray-500 hover:text-gray-600" "="" target="_blank">
+        <span class="sr-only">Youtube</span>
+        <img src="https://assets.akaunting.com/site/img/social/youtube-brands.svg" class="w-5 h-5" alt="Youtube">
+      </a>
+      
+      <a href="https://twitter.com/akaunting" class="text-gray-500 hover:text-gray-600" target="_blank">
+        <span class="sr-only">Twitter</span>
+        <img src="https://assets.akaunting.com/site/img/social/twitter-brands.svg" class="w-5 h-5" alt="Twitter">
+      </a>
+      
+      <a href="https://instagram.com/akaunting" class="text-gray-500 hover:text-gray-600" target="_blank">
+        <span class="sr-only">Instagram</span>
+        <img src="https://assets.akaunting.com/site/img/social/instagram-brands.svg" class="w-5 h-5" alt="Instagram">
+      </a>
+</nav>
+
+        </div>
+    </div>
+</footer>
+
+      <script type="text/javascript">
+        const ARC_REL_LEN = .8; // relative to whole arc
+        const FLIGHT_TIME = 770;
+        const NUM_RINGS = 4;
+        const RINGS_MAX_R = 8; // deg
+        const RING_PROPAGATION_SPEED = 5; // deg/sec
+    
+      
+        function onGlobe() {
+          const globe = Globe()
+               .width('2500px')
+                .backgroundColor('#FFF')
+                .globeImageUrl('https://unpkg.com/three-globe@2.24.6/example/img/earth-blue-marble.jpg')
+                .ringColor(() => '#6EA152')
+                .arcColor(() => '#CCC')
+                .onGlobeClick(emitArc)
+                .arcDashLength(ARC_REL_LEN)
+                .arcDashGap(2)
+                .arcDashInitialGap(1)
+                .arcDashAnimateTime(FLIGHT_TIME)
+                .arcsTransitionDuration(0)
+                .ringMaxRadius(RINGS_MAX_R)
+                .ringPropagationSpeed(RING_PROPAGATION_SPEED)
+                .ringRepeatPeriod(FLIGHT_TIME * ARC_REL_LEN / NUM_RINGS)
+                (document.getElementById('globeViz'));
+          
+              let prevCoords = { lat: 0, lng: 0 };
+              function emitArc({ lat: endLat, lng: endLng }) {
+                const { lat: startLat, lng: startLng } = prevCoords;
+                setTimeout(() => { prevCoords = { lat: endLat, lng: endLng }}, FLIGHT_TIME);
+          
+                // add and remove arc after 1 cycle
+                const arc = { startLat, startLng, endLat, endLng };
+                globe.arcsData([...globe.arcsData(), arc]);
+                setTimeout(() => globe.arcsData(globe.arcsData().filter(d => d !== arc)), FLIGHT_TIME * 2);
+          
+                // add and remove start rings
+                const srcRing = { lat: startLat, lng: startLng };
+                globe.ringsData([...globe.ringsData(), srcRing]);
+                setTimeout(() => globe.ringsData(globe.ringsData().filter(r => r !== srcRing)), FLIGHT_TIME * ARC_REL_LEN);
+          
+                // add and remove target rings
+                setTimeout(() => {
+                  const targetRing = { lat: endLat, lng: endLng };
+                  globe.ringsData([...globe.ringsData(), targetRing]);
+                  setTimeout(() => globe.ringsData(globe.ringsData().filter(r => r !== targetRing)), FLIGHT_TIME * ARC_REL_LEN);
+                }, FLIGHT_TIME);
+              }
+      
+        }
+
+        if (window.innerWidth > 1024) {
+          onGlobe();
+
+        }
+        
+        let top_position = document.querySelector('[data-map-section]').offsetTop -280;
+
+document.addEventListener('scroll', function() {
+    if (window.scrollY > top_position) {
+      document.getElementById('globeViz').classList.add('scale-100');
+      document.getElementById('globeViz').classList.remove('scale-0');
+    } else {
+   
+    }
+});
+      </script>
+                  
+</body>
+</html>
