@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="fonts/material-icons/style.css">
+    <script src="https://kit.fontawesome.com/433a851cf8.js" crossorigin="anonymous"></script>
+    <script src="https://example.com/fontawesome/v5.15.4/js/all.js" data-search-pseudo-elements ></script>
+</head>
+<body>
+  <header class="top-0 z-50 bg-white w-full h-auto border-b-2 border-gray-200 text-gray-500 font-semibold js-fixed">
+    <div class="flex justify-between items-center mx-6 xl:mx-52">
+        <div class="h-full w-52 p-4">
+            <img src="img/akaunting-logo-horizontal.svg" alt="akaunting">
+        </div>
+        <div>
+            <ul class="hidden space-x-10 p-6 sm:hidden lg:flex flex-row xl:flex flex-rows">
+                <li class="hover:text-gray-600"><a href="">Double-Entry</a></li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-2 gap-8 h-1/2 justify-between">
+            <a href="" class="bg-green-400 p-4 text-white rounded-xl hidden  lg:flex justify-center items-center hover:bg-green-500 transition">Get Started</a>
+            <a href= "" class="bg-gray-500 text-white w-14 h-14 rounded-full hidden text-lg lg:flex items-center justify-center">M</a> 
+        </div>
+    </div>  
+ </header>
+
+    <h1 class="flex justify-center text-2xl font-extrabold lg:text-4xl pt-16"> Pick a<div class="relative mx-1"> plan<div class="absolute top-6 right-0.5 h-2 bg-default w-full -z-10 opacity-70 lg:top-7 lg:h-4" style="background-color: #6EA152;"></div></div>that is right for you</h1>
+    <p class="flex justify-center text-center mt-2 text-xs lg:text-sm">One tool for all your business management needs.Now available for Cloud users.</p>
+    <div>
+        <div class="mt-8 justify-center">
+            <div class="flex flex-row justify-center pb-12">
+                <button type="button" class="px-7 py-2 bg-slate-800 text-white font-semibold text-xs ltr:rounded-l-xl rtl:rounded-r-xl">MONTLY</button>
+                <button type="button" class="px-3 py-2 bg-slate-100 text-gray-800 font-semibold text-xs ltr:rounded-r-xl rtl:rounded-l-xl flex flex-row"> YEARLY 🚀 <span class="text-red-600">(2 months free)</span></button>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="grid grid-cols-1 lg:grid-cols-2 pt-6 gap-3">
+            <div class="mb-20">
+              <div class="rounded-md pb-16 bg-emerald-400 bg-opacity-10">
+                <div class="flex flex-row justify-around px-5 py-3">
+                  <h2 class="pr-20 font-semibold text-slate-600">FREE CLOUD</h2>
+                  <span class="pl-20 text-default font-semibold" style="color:#6EA152">Active</span>
+                </div>
+
+                <p class="px-5 pb-5 text-sm text-gray-500">Good for SMEs and established businesses</p>
+
+                <div class="flex flex-col">
+                  <span class="px-5 text-3xl pb-1">Free</span>
+                  <span class="px-5 text-xs">Never billed.</span>
+                  <button class="m-5 p-1 transition-colors hover:text-white hover:bg-emerald-400  border border-emerald-400 text-emerald-400 rounded-md text-center font-semibold text-base">
+                    Free Forever
+                  </button>
+                </div>
+
+                <ul class="px-6 text-sm font-medium">
+                  <li class="py-1">
+                    <i class="fa-solid fa-check text-main-page-purple" style="color:#55588B"></i>
+                    <span class="px-3"> 1 User + 1 Accountant</span>
+                  </li>
+                  <li class="py-1">
+                    <i class="fa-solid fa-check text-main-page-purple" style="color:#55588B"></i>
+                    <span class="px-3"> Up to 5 Companies</span>
+                  </li>
+                  <li class="py-1">
+                    <i class="fa-solid fa-check text-main-page-purple" style="color:#55588B"></i>
+                    <span class="px-3"> Community Support</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="rounded-md -mt-8 pb-16 bg-amber-50 bg-opacity-70">
+                <h2 class="px-5 pt-11 font-semibold text-slate-600">PREMIUM CLOUD</h2>
+                <p class="px-4 pb-5 pt-3 text-sm text-gray-500">Good for SMEs and established businesses</p>
+
+                <div class="flex flex-col">
+                  <span class="px-5 text-3xl font-bold pb-1">36$<span class="text-sm font-semibold mx-1">per month</span></span>
+                  <span class="text-red-400 px-5 text-xs">Billed <span class="line-through">432</span>  288 per year</span>
+                  <button class="m-5 p-1 mt-5 border hover:bg-amber-400 hover:text-white border-amber-400 text-amber-400 rounded-md font-semibold text-base transition-colors">Get Started</button>
+                </div>
+
+                <ul class="px-6 text-sm font-medium">
+                  <li class="py-1">
+                    <i class="fa-solid fa-check" style="color:#C1B55E"></i>
+                    <span class="px-3"> Unlimited Users</span>
+                  </li>
+                  <li class="py-1">
+                    <i class="fa-solid fa-check" style="color:#C1B55E"></i>
+                    <span class="px-3"> Unlimited Companies</span>
+                  </li>
+                  <li class="py-1">
+                    <i class="fa-solid fa-check" style="color:#C1B55E"></i>
+                    <span class="px-3"> Bank Feeds</span>
+                  </li>
+                  <li class="py-1">
+                    <i class="fa-solid fa-check" style="color:#C1B55E"></i>
+                    <span class="px-3"> Ticket Support</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="flex justify-center my-9 lg:my-0">
+      <button class="flex flex-col font-bold js-scrollClick">
+        See All Comparison List
+        <i class="fa-solid fa-arrow-down mx-auto mt-3 animate-bounce"></i>
+      </button>
+    </div>
+    <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+      <h2 class="mx-auto mt-12 text-center text-4xl font-extrabold lg:w-10/12">Focus on what really matter to grow your business, don't worry about the rest.</h2>
+      <div class="mt-16">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <div class="pt-6">
+              <div class="flow-root bg-gray-50 bg-opacity-50 rounded-lg px-6 pb-8">
+                  <div class="-mt-6">
+                      <div>
+                          <span class="inline-flex items-center justify-center p-3 bg-gray-700 rounded-md shadow-lg">
+                              <i class="far fa-flag text-white"></i>
+                          </span>
+                      </div>
+                      <h3 class="mt-8 text-lg font-semibold text-gray-900 tracking-tight">Unlimited Companies (Businesses)</h3>
+                      <p class="mt-5 text-base text-gray-500 h-20">
+                        Keep the books for multiple businesses or organizations under one account in one admin panel.
+                      </p>
+                  </div>
+              </div>
+          </div> 
+  
+              <div class="pt-6">
+                <div class="flow-root bg-gray-50 bg-opacity-50 rounded-lg px-6 pb-8">
+                    <div class="-mt-6">
+                        <div>
+                            <span class="inline-flex items-center justify-center p-3 bg-gray-700 rounded-md shadow-lg">
+                                <i class="far fa-flag text-white"></i>
+                            </span>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-gray-900 tracking-tight">Unlimited Invoices & Bills</h3>
+                        <p class="mt-5 text-base text-gray-500 h-20">
+                          Bill your clients freely. There is no limit on the invoices and bills you create.
+                        </p>
+                    </div>
+                </div>
+            </div> 
+  
+              <div class="pt-6">
+                  <div class="flow-root bg-gray-50 bg-opacity-50 rounded-lg px-6 pb-8">
+                      <div class="-mt-6">
+                          <div>
+                              <span class="inline-flex items-center justify-center p-3 bg-gray-700 rounded-md shadow-lg">
+                                  <i class="far fa-flag text-white"></i>
+                              </span>
+                          </div>
+                          <h3 class="mt-8 text-lg font-semibold text-gray-900 tracking-tight">Unlimited Customers & Vendors</h3>
+                          <p class="mt-5 text-base text-gray-500 h-20">
+                            Manage an unlimited number of clients and vendors. No worry about any limits as your business grows.
+                          </p>
+                      </div>
+                  </div>
+              </div> 
+          </div>
+      </div>
+  </div>
+
+  <div class="pt-16 pb-20 h-96 relative">
+    <img src="img/Group.svg" alt="akaunting" class=" w-screen h-96">
+    <div class="flex justify-center">
+      <p class="absolute top-40 flex justify-center p-4 font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-fuchsia-900 to-cyan-500">123,123 SMSs trust Akaunting everyday</p>
+      <p class="absolute md:bottom-20 bottom-32 flex justify-center text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-900 to-cyan-500 text-xs">From 150 countries, 123,123 small business owners trust Akaunting to keep their books.<br> From 150 countries, 123,123 small business owners trust Akaunting to keep their books.<br> From 150 countries, 123,123 small business owners trust Akaunting to keep their books.</p>
+    </div>
+</div> 
+
+  <div class="py-16">
+    <h2 class="text-3xl my-8 font-extrabold text-center">Add-ons. You will love.</h2>
+    <p class="text-center mx-auto mb-16 text-gray-500 lg:w-10/12 xl:w-2/3">You can find any solution to track your finances and run your business in Akaunting’s App Store. Search-Click-Install. It’s that easy to get an add-on when using Akaunting. Sounds amazing, doesn’t it?</p>
+
+    <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-8 justify-center mx-9">
+      <div class="lg:w-96 w-72 flex flex-col rounded-2xl shadow-lg my-5 lg:my-0 hover:shadow-xl">
+        <div class="flex flex-row items-center p-3">
+          <div class="bg-default rounded-lg px-4 py-3"style="background-color:#6EA152 ;">
+            <i class="fa-solid fa-phone text-md text-white"></i>
+          </div>
+          <h3 class="mx-4 text-lg font-semibold">Payroll</h3>
+        </div>
+        <p class="w-4/5 text-gray-500 text-sm p-3">
+          You can find any solution to track your finances and run your business in Akaunting’s App Store. 
+        </p>
+        <div class="flex flex-row justify-between bg-slate-100 bg-opacity-40 hover:bg-opacity-100 transition-colors p-5">
+          <a href="" class="font-bold lg:text-semibold text-sm">Get the Payroll Add-on span <span class="hover:translate-x-5">→</span></a>
+          <span class="font-bold lg:text-semibold text-sm">$4/m</span>
+        </div>
+      </div>
+
+      <div class="lg:w-96 w-72 flex flex-col rounded-2xl shadow-lg my-5 lg:my-0 hover:shadow-xl">
+        <div class="flex flex-row items-center p-3">
+          <div class="bg-default rounded-lg px-4 py-3"style="background-color:#6EA152 ;">
+            <i class="fa-solid fa-phone text-md text-white"></i>
+          </div>
+          <h3 class="mx-4 text-lg font-semibold">Payroll</h3>
+        </div>
+        <p class="w-4/5 text-gray-500 text-sm p-3">
+          You can find any solution to track your finances and run your business in Akaunting’s App Store. 
+        </p>
+        <div class="flex flex-row justify-between bg-slate-100 bg-opacity-40 hover:bg-opacity-100 transition-colors p-5">
+          <a href="" class="font-bold lg:text-semibold text-sm">Get the Payroll Add-on span <span class="hover:translate-x-5">→</span></a>
+          <span class="font-bold lg:text-semibold text-sm">$4/m</span>
+        </div>
+      </div>
+
+      <div class="lg:w-96 w-72 flex flex-col rounded-lg shadow-lg my-5 lg:my-0 hover:shadow-xl ml-0">
+        <div class="flex flex-row items-center p-3">
+          <div class="bg-default rounded-lg px-4 py-3"style="background-color:#6EA152 ;">
+            <i class="fa-solid fa-phone text-md text-white"></i>
+          </div>
+          <h3 class="mx-4 text-lg font-semibold">Payroll</h3>
+        </div>
+        <p class="w-4/5 text-gray-500 text-sm p-3">
+          You can find any solution to track your finances and run your business in Akaunting’s App Store. 
+        </p>
+        <div class="flex flex-row justify-between bg-slate-100 bg-opacity-40 hover:bg-opacity-100 transition-colors p-5">
+          <a href="" class="font-bold lg:text-semibold text-sm">Get the Payroll Add-on span <span class="hover:translate-x-5">→</span></a>
+          <span class="font-bold lg:text-semibold text-sm">$4/m</span>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <h1 class="flex justify-center flex-row my-16 text-lg font-extrabold lg:text-3xl pt-4 js-scroll">See<div class="relative mx-1">which plan<div class="absolute top-4 h-2 bg-default w-full -z-10 opacity-70 lg:top-6 lg:h-3" style="background-color:#6EA152;"></div></div>is best for your business</h1>
+  <div class="flex justify-center">
+
+    <div class="grid grid-cols-3 gap-5 pb-3">
+      <div class="w-1/5"></div>
+      <div class="flex flex-col text-center">
+        <h3 class="font-bold text-lg pb-2">Free Cloud</h3>
+        <span class="text-sm text-gray-500 pb-2">Good for freelancers, new businesses, ans</span>
+        <span class="font-semibold text-sm mt-2">Active</span>
+      </div>
+
+      <div class="flex flex-col text-center mx-4">
+        <h3 class="font-bold text-lg pb-2" style="color: #C1B55E;">Premium Cloud</h3>
+        <span class="text-sm text-gray-500 pb-2">Good for SMEs and established businesses of all sizes.</span>
+        <a href="" class="font-semibold text-sm text-white bg-premium rounded-md mx-5 py-1 px-2" style="background-color: #C1B55E;">Upgrade</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-11/12 xl:w-full mx-auto overflow-x-auto">
+    <div class="flex justify-center">
+      <div class="flex flex-col justify-center">
+        <h3 class="font-bold pb-2">Main Features</h3>
+        <div class="border-l-4 border-default rounded-md text-sm xl:text-base font-semibold" style="border-color:#6EA152;">
+          <div class="grid grid-cols-3 pt-2">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Companies</div>
+            <div class="w-96 text-center py-2"></div>
+            <div class="w-96 text-center py-2">Up to 5 Companies</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex justify-center pt-16">
+      <div class="flex flex-col justify-center">
+        <h3 class="font-bold pb-2">Other Perks</h3>
+        <div class="border-l-4 border-default rounded-md text-sm xl:text-base font-semibold" style="border-color:#6EA152;">
+          <div class="grid grid-cols-3  pt-2">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Companies</div>
+            <div class="w-96 text-center py-2"></div>
+            <div class="w-96 text-center py-2">Up to 5 Companies</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" >1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="flex justify-center pt-16">
+      <div class="flex flex-col justify-center">
+        <h3 class="font-bold pb-2">Other Perks</h3>
+        <div class="border-l-4 border-default rounded-md text-sm xl:text-base font-semibold" style="border-color:#6EA152;">
+          <div class="grid grid-cols-3  pt-2">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Companies</div>
+            <div class="w-96 text-center py-2"></div>
+            <div class="w-96 text-center py-2">Up to 5 Companies</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" >1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2">Unlimited Users</div>
+          </div>
+          <div class="grid grid-cols-3">
+            <div class="px-4 underline">Users</div>
+            <div class="w-96 text-center py-2" style="background-color: #FBFBFB;">1 User + 1 Accountant</div>
+            <div class="w-96 text-center py-2" style="background-color: #c1b55e10;">Unlimited Users</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-6xl flex flex-row justify-center mx-auto mt-12">
+    <div class="flex flex-col bg-slate-400 bg-opacity-5 p-9 rounded-lg">
+      <h3 class="text-3xl lg:text-5xl font-extrabold">Still not sure?</h3>
+      <p class="lg:w-3/4 text-sm lg:text-md mt-5 font-semibold text-gray-500">
+        There are many more features that the Premium Cloud will help your business. Check out the awesome features that will change the way you do business. 
+      </p>
+      <a href="" class="w-32 mt-5 p-3 text-center rounded-md bg-slate-700 text-white font-semibold text-sm">Discover More</a>
+    </div>
+    <div>
+        <img src="img/young-female-freelancer-or-owner-of-small-business-2022-06-28-23-44-22-utc-1 1.png" alt="" class="w-96 h-72 object-cover rounded-r-lg lg:flex hidden">
+    </div>
+   </div>
+
+  <div class="max-w-full mx-auto py-12 px-1 sm:py-16 sm:px-6 lg:px-5">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl mx-12 font-extrabold text-gray-900 sm:text-4xl">
+        Frequently asked questions
+      </h2>
+      <dl class="mt-6 mx-12 space-y-6 grid grid-cols-1 lg:grid-cols-2 gap-x-28">
+        <div class="pt-6 js-accordions-parent">
+          <dt class="text-md js-accordions">
+            <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+            <span class="font-medium text-gray-900">
+                How can I subscribe to the Premium Cloud as an on-prem user?
+              </span>
+              <span class="ml-6 h-7 flex items-center">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </button>
+          </dt>
+          <dd class="my-5 pr-12 js-accordions-text transition" style="opacity: 1; visibility: visible; height: 0;" id="faq-0">
+            <p class="text-sm text-gray-500">
+              Premium Cloud is only available for Cloud (we host) users. In order to use the Premium plan, you need to <a href="https://akaunting.com/register" target="_blank"> sign up </a> to the Cloud.
+            </p>
+          </dd>
+        </div>
+        <div class="js-accordions-parent">
+          <dt class="text-md js-accordions">
+            <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+              <span class="font-medium text-gray-900">
+                How long is the Free Cloud free for?
+              </span>
+              <span class="ml-6 h-7 flex items-center">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12 js-accordions-text transition" style="opacity: 1; visibility: visible; height: 0;" id="faq-0">
+            <p class="text-sm text-gray-500">
+              The Free Cloud of Akaunting is free forever.
+            </p>
+          </dd>
+        </div>
+        <div class="pt-3 js-accordions-parent">
+          <dt class="text-md js-accordions">
+            <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+              <span class="font-medium text-gray-900">
+                How many invoices and bills can I create in a year?
+              </span>
+              <span class="ml-6 h-7 flex items-center">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12 js-accordions-text transition" id="faq-2" style="opacity: 0; visibility: hidden; height: 0;">
+            <p class="text-sm text-gray-500">
+              Akaunting allows you to create an unlimited number of invoices and
+              bills.
+            </p>
+          </dd>
+        </div>
+        <div class="pt-3 js-accordions-parent">
+          <dt class="text-md js-accordions">
+            <!-- Expand/collapse question button -->
+            <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+              <span class="font-medium text-gray-900">
+                Can I cancel anytime?
+              </span>
+              <span class="ml-6 h-7 flex items-center">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12 js-accordions-text transition" id="faq-3" style="opacity: 0; visibility: hidden; height: 0;">
+            <p class="text-sm text-gray-500">
+              Yes, you can cancel any time. You still can enjoy using Akaunting
+              up until the end of your subscription.
+            </p>
+          </dd>
+        </div>
+        <div class="pt-3 js-accordions-parent">
+          <dt class="text-md js-accordions">
+            <!-- Expand/collapse question button -->
+            <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+              <span class="font-medium text-gray-900">
+                What is billing calendar?
+              </span>
+              <span class="ml-6 h-7 flex items-center">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12 js-accordions-text transition" id="faq-4" style="opacity: 0; visibility: hidden; height: 0;">
+            <p class="text-sm text-gray-500">
+              If you have a hectic work schedule, it is easier to lose track of
+              your billing calendar. You might miss the due dates for the bills
+              you are receiving and sending. Billing Calendar allows you to
+              manage your calendar regarding your books and reduces the
+              probability of overdue payments.
+            </p>
+          </dd>
+        </div>
+        <div class="pt-3 js-accordions-parent">
+          <dt class="text-md js-accordions">
+            <!-- Expand/collapse question button -->
+            <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+              <span class="font-medium text-gray-900">
+                What is Bank Feeds?
+              </span>
+              <span class="ml-6 h-7 flex items-center">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12 js-accordions-text transition" id="faq-4" style="opacity: 0; visibility: hidden; height: 0;">
+            <p class="text-sm text-gray-500">
+              Any banking service consumer needs at one point to get their data
+              out for analyzing and recording their transactions. Akaunting
+              users have been asking for such a connectivity service for some
+              time now. With the bank feeds feature, you can import your data
+              automatically as transactions. So you can quickly review your
+              transactions and connect them to invoices and bills. The bank
+              feeds service is available for users from the US, Canada, UK and European countries.
+            </p>
+          </dd>
+        </div>
+        <div class="pt-3 js-accordions-parent">
+            <dt class="text-md js-accordions">
+              <!-- Expand/collapse question button -->
+              <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+                <span class="font-medium text-gray-900">
+                    Does the Premium Cloud support Double-Entry accounting?
+                </span>
+                <span class="ml-6 h-7 flex items-center">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 js-accordions-text transition" id="faq-5" style="opacity: 0; visibility: hidden; height: 0;">
+              <p class="text-sm text-gray-500">
+                Yes, the Premium Cloud plan ships with double-entry accounting features. If you need to manage your company’s finances comprehensively, we strongly suggest you do so, and you may need to get a balance sheet and trial balance reports. These reports work accurately only if your solution allows you to record your entries in a general ledger. Premium Cloud is the way to go when you need to take your bookkeeping towards an advanced one and get a Balance Sheet, Chart of Accounts, and more.
+              </p>
+            </dd>
+          </div>
+          <div class="pt-3 js-accordions-parent">
+            <dt class="text-md js-accordions">
+              <!-- Expand/collapse question button -->
+              <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+                <span class="font-medium text-gray-900">
+                    How does Support Tickets work?
+                </span>
+                <span class="ml-6 h-7 flex items-center">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 js-accordions-text transition" id="faq-4" style="opacity: 0; visibility: hidden; height: 0;">
+              <p class="text-sm text-gray-500">
+                In Akaunting, there is always someone whenever you need. The support team and expert developers are always there to answer and help your questions. You can now create tickets for all your questions and get support from the experienced Akaunting team members with just a few clicks for the apps that come with the Premium Cloud.
+              </p>
+            </dd>
+          </div>
+          <div class="pt-3 js-accordions-parent">
+            <dt class="text-md js-accordions">
+              <!-- Expand/collapse question button -->
+              <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+                <span class="font-medium text-gray-900">
+                    Can I add more than one business?
+  
+                </span>
+                <span class="ml-6 h-7 flex items-center">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 js-accordions-text transition" id="faq-6" style="opacity: 0; visibility: hidden; height: 0;">
+              <p class="text-sm text-gray-500">
+                Yes, Akaunting allows users to add multiple companies as different organizations.
+              </p>
+            </dd>
+          </div>
+          <div class="pt-3 js-accordions-parent">
+            <dt class="text-md js-accordions">
+              <!-- Expand/collapse question button -->
+              <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+                <span class="font-medium text-gray-900">
+                    How many users can I add in the Premium Cloud?
+                </span>
+                <span class="ml-6 h-7 flex items-center">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 js-accordions-text transition" id="faq-7" style="opacity: 0; visibility: hidden; height: 0;">
+              <p class="text-sm text-gray-500">
+                Premium Cloud enables an unlimited number of users. You can add your employees as you grow your business.
+              </p>
+            </dd>
+          </div>
+          <div class="pt-3 js-accordions-parent">
+            <dt class="text-md js-accordions">
+              <!-- Expand/collapse question button -->
+              <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+                <span class="font-medium text-gray-900">
+                    What does unlimited users mean?
+                </span>
+                <span class="ml-6 h-7 flex items-center">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 js-accordions-text transition" id="faq-8" style="opacity: 0; visibility: hidden; height: 0;">
+              <p class="text-sm text-gray-500">
+                You can add as many users as you want in Akaunting. You can create an account for your entire team and easily manage your business as a team, even if you are a huge team!
+              </p>
+            </dd>
+          </div>
+          <div class="pt-3 js-accordions-parent">
+            <dt class="text-md js-accordions">
+              <!-- Expand/collapse question button -->
+              <button type="button" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+                <span class="font-medium text-gray-900">
+                    What is Live Currency?
+                </span>
+                <span class="ml-6 h-7 flex items-center">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 js-accordions-text transition" id="faq-9" style="opacity: 0; visibility: hidden; height: 0;">
+              <p class="text-sm text-gray-500">
+                If your business deals with multiple currencies you are probably running an international operation. There might be many things on your table to consider rigorously, shipping to providing services in multiple languages. But with the Live Currency solution, you would not need to worry about the currency exchange rates, because they are fetched from the most popular data providers.
+              </p>
+            </dd>
+          </div>  
+      </dl>
+    </div>
+  </div>
+  
+
+  <footer class="w-full h-auto bg-slate-100">
+    <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-5 justify-between mx-10 py-12 leading-10 text-gray-600 xl:mx-60">
+        <div class="leading-6">
+           <img src="img/akaunting-logo-horizontal.svg" alt="akaunting" class="w-40">
+           <p class="w-56">Online, open source and free accounting software built with modern technologies.
+            Track your income and expenses with ease.</p>
+        </div>
+        <div>
+            <ul class="flex flex-col">
+                <li><a class="font-bold">TRENDING APPS</a></li>
+                <li class="hover:text-gray-800"><a href="">Double-Entry</a></li>
+                <li class="hover:text-gray-800"><a href="">Inventory</a></li>
+                <li class="hover:text-gray-800"><a href="">Custom Fields</a></li>
+                <li class="hover:text-gray-800"><a href="">Estimates (Quotes)</a></li>
+                <li class="hover:text-gray-800"><a href="">Projects</a></li>
+                <li class="hover:text-gray-800"><a href="">Expenses</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a class="font-bold">RESOURCES</a></li>
+                <li class="hover:text-gray-800"><a href="">Plans</a></li>
+                <li class="hover:text-gray-800"><a href="">$100K Apps Fund</a></li>
+                <li class="hover:text-gray-800"><a href="">Documentation</a></li>
+                <li class="hover:text-gray-800"><a href="">Community Support</a></li>
+                <li class="hover:text-gray-800"><a href="">Developers</a></li>
+                <li class="hover:text-gray-800"><a href="">Free Tools</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="w-64 ">
+                <li><a class="font-bold">LINKS</a></li>
+                <li class="hover:text-gray-800"><a href="">Open Source Accounting Software</a></li>
+                <li class="hover:text-gray-800"><a href="">Free Wave Accounting Alternative</a></li>
+                <li class="hover:text-gray-800"><a href="">Online Accounting Software</a></li>
+                <li class="hover:text-gray-800"><a href="">Free QuickBooks Alternative</a></li>
+                <li class="hover:text-gray-800"><a href="">Free FreshBooks Alternative</a></li>
+            </ul>
+        </div> 
+    </div>
+    <div>
+        <ul class="lg:flex flex-row space-x-10 p-10 text-gray-500 border-y-2">
+            <li><a>Copyright © 2017-2022 Akaunting Inc.</a></li>
+            <li class="hidden sm:hidden lg:flex"><a href="">About</a></li>
+            <li class="hidden sm:hidden lg:flex"><a href="">Terms </a></li>
+            <li class="hidden sm:hidden lg:flex"><a href=""> Privacy  </a></li>
+            <li class="hidden sm:hidden lg:flex"><a href="">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+  <script>
+    document.querySelector(".js-scrollClick").addEventListener("click", scrollPage);
+
+    function scrollPage() {
+      window.scrollTo({
+        top:(document.querySelector(".js-scroll").offsetTop),
+        behavior:"smooth"
+      });
+    }
+
+
+
+  </script>
+</body>
+</html>
